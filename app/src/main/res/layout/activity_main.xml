@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="RUMUS BANGUN DATAR"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/merah"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:textColor="@color/merah"
+            android:text="PILIH RUMUS BANGUN DATAR" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnSegitiga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:backgroundTint="@color/merah"
+            android:text="Segitiga"
+            android:onClick="segitiga"/>
+
+        <Button
+            android:id="@+id/btnPersegi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:backgroundTint="@color/merah"
+            android:text="Persegi"
+            android:onClick="persegi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLingkaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:backgroundTint="@color/merah"
+            android:text="Lingkaran"
+            android:onClick="lingkaran"/>
+
+        <Button
+            android:id="@+id/btnPersegiPanjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:backgroundTint="@color/merah"
+            android:text="Persegi Panjang"
+            android:onClick="persegiPanjang"/>
+    </LinearLayout>
+
+</LinearLayout>
